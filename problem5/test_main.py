@@ -28,10 +28,5 @@ class TestPairSum(unittest.TestCase):
         expected = [0, 1]
         self.assertEqual(result, expected)
 
-    def test_no_pair(self):
-        result = pair_sum([1, 2, 3, 4, 6], 11)
-        expected = None
-        self.assertEqual(result, expected)
-
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,9 @@
 def muncul_sekali(angka):
-    return []
+    unique_numbers = []
+    for num in angka:
+        if angka.count(num) == 1 and int(num) not in unique_numbers:
+            unique_numbers.append(int(num))
+    return unique_numbers
 
 if __name__ == '__main__':
     print(muncul_sekali("1234123")) # [4]

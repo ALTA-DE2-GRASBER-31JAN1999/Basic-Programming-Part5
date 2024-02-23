@@ -1,6 +1,13 @@
 def join_array_remove_duplicate(arrayA, arrayB):
-    # your code here
-    return []
+    combined_array = arrayA + arrayB
+
+    # Remove duplicate values while preserving the order
+    unique_array = []
+    for item in combined_array:
+        if item not in unique_array:
+            unique_array.append(item)
+
+    return unique_array
 
 if __name__ == '__main__':
     # Test cases
